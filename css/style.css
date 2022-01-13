@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#navbarNav {
+  position: fixed;
+  right: 0px;
+}
+
+.navbar {
+  border-bottom: 5px solid black;
+}
+
+#navbarNav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px 20px;
+  display: block;
+}
+.far,
+.fas {
+  margin-right: 3px;
+  font-size: 15px;
+}
+.active {
+  background-color: black !important;
+  color: white !important;
+  border-top-right-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+  text-decoration: unset !important;
+}
+
+.photo1 {
+  width: 100%;
+}
+
+.section {
+  padding: 80px 0px;
+}
+
+.grey {
+  background-color: lightgrey;
+}
+
+.site-btn {
+  color: black;
+  min-width: 170px;
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.66;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.portfolio-item {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.portfolio-links {
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+}
+
+.submit {
+  margin-top: 40px;
+  background-color: turquoise;
+}
+
+.m5 {
+  margin: 5px 0px;
+}
+
+.turquoise {
+  background-color: turquoise;
+}
+
+.portfolio-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+
+.portfolio-p {
+  font-family: "Lato", sans-serif;
+  margin-top: -10px;
+}
+
+a {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+#contact-form p {
+  margin: 0px;
+}
+
+#contact-form .form-control {
+  margin: 10px 0px;
+}
+
+#downloadcv {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #navbarNav {
+    position: relative;
+  }
+  .portfolio-links {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+  }
+  .photo1 {
+    margin-top: 20px;
+  }
+  #navbarNav ul li a {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-btn {
+    margin-top: 5px;
+  }
+}

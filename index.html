@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f58f7ba28f.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <title>Billal's CV</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">Billal.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="hello" href="#"><i class="far fa-smile"></i>Hello</a><span class="border-curve"></span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio" href="#"><i class="fas fa-border-all"></i>Porfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="skills" href="#"><i class="fas fa-link"></i>Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="experience" href="#"><i class="fas fa-graduation-cap"></i>Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="education" href="#"><i class="fas fa-award"></i>Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact" href="#"><i class="fas fa-at"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hello Section -->
+  <div class="section grey" id="1">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg">
+          <h2>I am Billal Asif</h2>
+          <p>I am a Web Developer located in London, England. I started my web development journey <label id="month"></label> months ago. I am
+            looking to break into the industry to increase my skills and gain relevant experience.</p>
+          <button class="site-btn turquoise" id="contactme">Contact Me</button>
+          <button class="site-btn" id="downloadcv">Download CV</button>
+        </div>
+
+        <div class="col-lg">
+          <img class="photo1" src="images/photo1.jpg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="section" id="2">
+    <div class="container">
+
+      <h2>Portfolio</h2>
+
+      <button id="all" class="portfolio-links active">All</button>
+      <button id="templates" class="portfolio-links">Templates</button>
+      <button id="javascript" class="portfolio-links">Javascript</button>
+      <button id="htmlcss" class="portfolio-links">HTML & CSS</button>
+      <button id="php" class="portfolio-links">PHP</button>
+      <button id="sql" class="portfolio-links">SQL</button>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6" id="snappyrepairsCol">
+          <a href="https://www.snappyrepairs.com"><img class="portfolio-item" src="images/portfolio1.jpg"></a>
+          <a href="https://www.snappyrepairs.com">
+            <p class="portfolio-title">Snappyrepairs</p>
+          </a>
+          <p class="portfolio-p">Template-based website</p>
+        </div>
+        <div class="col-lg-3 col-sm-6" id="gloryCol">
+          <a href="https://glorystorageaccount.z33.web.core.windows.net/index.html"><img class="portfolio-item" src="images/portfolio2.jpg"></a>
+          <a href="https://glorystorageaccount.z33.web.core.windows.net/index.html">
+            <p class="portfolio-title">Glory Helper</p>
+          </a>
+          <p class="portfolio-p">HTML & CSS based website</p>
+        </div>
+        <div class="col-lg-3 col-sm-6" id="randomquotesCol">
+          <a href="https://randomquotes.z6.web.core.windows.net/"><img class="portfolio-item" src="images/portfolio3.jpg"></a>
+          <a href="https://randomquotes.z6.web.core.windows.net/">
+            <p class="portfolio-title">To Do App</p>
+          </a>
+          <p class="portfolio-p">Javascript based website</p>
+        </div>
+        <div class="col-lg-3 col-sm-6" id="booklistCol">
+          <a href="https://booklist.z33.web.core.windows.net/"><img class="portfolio-item" src="images/portfolio4.jpg"></a>
+          <a href="https://booklist.z33.web.core.windows.net/">
+            <p class="portfolio-title">BookList</p>
+          </a>
+          <p class="portfolio-p">JS/HTML5 Local Storage</p>
+        </div>
+        <div class="col-lg-3 col-sm-6" id="sunnahmarketCol">
+          <a><img class="portfolio-item" src="images/portfolio5.jpg"></a>
+          <a>
+            <p class="portfolio-title">Sunnah Market</p>
+          </a>
+          <p class="portfolio-p">Php based website (incomplete)</p>
+        </div>
+        <div class="col-lg-3 col-sm-6" id="sqlCol">
+          <a><img class="portfolio-item" src="images/portfolio6.jpg"></a>
+          <a>
+            <p class="portfolio-title">Sunnah Market DB</p>
+          </a>
+          <p class="portfolio-p">SQL database (incomplete)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="section grey" id="3">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h2><span class="point">Skills</span></h2>
+          <p>I love the idea of creating great work with people who are as passionate as I am about building something
+            great.</p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <div class="col-md-6">
+              <hr class="mobile-hr">
+              <h4>HTML</h4>
+              <p>I enjoy creating the structure of websites using html5, including local storage to video elements.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <hr class="mobile-hr">
+              <h4>CSS</h4>
+              <p>CSS3 makes it simple to create clean stylesheets which makes it enjoyable to create beautiful pages.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <hr class="mobile-hr">
+              <h4>Javascript</h4>
+              <p>My first taste of a Object-oriented programming language, not without difficulties but gratifying.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <hr class="mobile-hr">
+              <h4>Bootstrap</h4>
+              <p>My favourite framework, I use this to reduce development time, and increase my knowledge base.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="section" id="4">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h2><span class="point">Experience</span></h2>
+          <p>My past experiences have enabled me to become an organised individual who is able to prioritise my work.
+          </p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <hr class="mobile-hr">
+            <h4>Glory Global Solutions: 2018 - Current</h4>
+            <p>Role: Field Service Engineer. Duties include, diagnosing cash recyclers, repairing and maintenance.
+            </p>
+            <hr class="mobile-hr">
+            <h4>BASP Consultant Ltd: 2014 - 2018</h4>
+            <p>Role: Director. Contracting for the following companies as a service enginer - NHS, Cennox, Wincor,
+              Toshiba, NCR,
+              Santander.
+            </p>
+            <hr class="mobile-hr">
+            <h4>Extiera Ltd: 2013 - 2014</h4>
+            <p>Role: Online admin. Duties include, Setting up new users, reset Passwords, replying to customer emails.
+            </p>
+            <hr class="mobile-hr">
+            <h4>Booker Plc: 2009 - 2013</h4>
+            <p>Role: General Assistant: Duties include, stocking shelves, serving customers on tills, dealing with
+              queries.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <div class="section grey" id="5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h2><span class="point">Education</span></h2>
+          <p>I have achieved a core foundation through my education experience, which dictates my dat to day.</p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <hr class="mobile-hr">
+            <h4>London South Bank University: 2010 - 2013</h4>
+            <p>BSc Business & IT Grade achieved 2.2
+            </p>
+            <hr class="mobile-hr">
+            <h4>Ernest Bevin College: 2005 - 2007</h4>
+            <p>A-levels - Double ICT and Design Technology. Grade - Pass
+            </p>
+            <hr class="mobile-hr">
+            <h4>Ernest Bevin School: 2000 - 2005</h4>
+            <p>GCSE’s - English (language & literature), Mathematics, Science, Design Technology, Religious Education
+              and Double ICT. Grades: A to Cs
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="6">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h2><span class="point">Contact</span></h2>
+          <div class="opacity-box">
+            <p>Please get in touch.</p>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <form id="contact-form" action="https://formspree.io/f/mwkaypez" method="post">
+
+              <input class="form-control" placeholder="Name ..." type="text" name="name" id="name" required>
+
+              <input class="form-control" placeholder="Company ..." type="company" name="company" id="company" required>
+
+              <input class="form-control" placeholder="Email ..." type="email" name="email" id="email" required>
+
+              <textarea class="form-control" placeholder="Your Message ..." name="message" id="message" rows="4" required></textarea>
+
+              <button href="#" id="submitButton" type="submit" class="site-btn submit">Send Message</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Created by Billal Asif
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
