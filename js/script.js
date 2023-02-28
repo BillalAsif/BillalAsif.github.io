@@ -1,15 +1,12 @@
 /* Porfolio Links Variable */
 var allLink = document.querySelector("#all");
-var templatesLink = document.querySelector("#templates");
 var javascriptLink = document.querySelector("#javascript");
 var htmlcssLink = document.querySelector("#htmlcss");
-var phpLink = document.querySelector("#php");
 var sqlLink = document.querySelector("#sql");
 
 /* Portfolio Columns */
-var snappyrepairsPortfolio = document.getElementById('snappyrepairsCol');
-var gloryPortfolio = document.getElementById('gloryCol');
-var randomquotesPortfolio = document.getElementById('randomquotesCol');
+var sosPortfolio = document.getElementById('bjjCol');
+var jsgamePortfolio = document.getElementById('randomquotesCol');
 var booklistPortfolio = document.getElementById('booklistCol');
 var sunnahmarketPortfolio = document.getElementById('sunnahmarketCol');
 var dbPortfolio = document.getElementById('sqlCol');
@@ -96,13 +93,6 @@ allLink.addEventListener('click', () => {
     showAll();
 });
 
-templatesLink.addEventListener('click', () => {
-    removeActivePortfolio();
-    templatesLink.classList.add('active');
-    hideAll();
-    snappyrepairsPortfolio.classList.remove('hide');
-});
-
 javascriptLink.addEventListener('click', () => {
     removeActivePortfolio();
     javascriptLink.classList.add('active');
@@ -152,7 +142,6 @@ function removeActiveNav() {
 function removeActivePortfolio() {
 
     allLink.classList.remove('active');
-    templatesLink.classList.remove('active');
     javascriptLink.classList.remove('active');
     htmlcssLink.classList.remove('active');
     phpLink.classList.remove('active');
@@ -163,7 +152,6 @@ function removeActivePortfolio() {
 /* Hide all portfolio items */
 function hideAll() {
 
-    snappyrepairsPortfolio.classList.add('hide');
     gloryPortfolio.classList.add('hide');
     randomquotesPortfolio.classList.add('hide');
     booklistPortfolio.classList.add('hide');
@@ -183,21 +171,3 @@ function showAll() {
     dbPortfolio.classList.remove('hide');
 
 }
-
-/* Currnt month function */
-function getCurrentMonth() {
-    var d1 = new Date().getMonth(); //"now"
-    var d2 = new Date("2021/06/01").getMonth();  // some date
-    var y1 = new Date().getFullYear(); //"now"
-    var y2 = new Date("2021/06/01").getFullYear();  // some date
-    var diffMonth = d1 - d2;
-    var diffYear = y1 - y2;
-
-    if (diffYear === 0) {
-        document.getElementById("month").innerHTML = diffMonth;
-    } else {
-        document.getElementById("month").innerHTML = diffYear + " years and " + diffMonth;
-    }
-}
-getCurrentMonth();
-
