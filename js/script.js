@@ -22,35 +22,33 @@ var contactLink = document.querySelector("#contact");
 document.getElementById('hello').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('1').scrollIntoView();
-
 });
 
 document.getElementById('portfolio').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('2').scrollIntoView();
-
 });
 
 document.getElementById('skills').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('3').scrollIntoView();
-
 });
+
 document.getElementById('experience').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('4').scrollIntoView();
 
 });
+
 document.getElementById('education').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('5').scrollIntoView();
-
 });
 document.getElementById('contact').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('6').scrollIntoView();
-
 });
+
 document.getElementById('contactme').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('6').scrollIntoView();
@@ -61,65 +59,30 @@ document.getElementById('contactme').addEventListener('click', function (e) {
 /* Navigation active event listeners */
 helloLink.addEventListener('click', () => {
     removeActiveNav();
-    helloLink.classList.add('active');
+    activateNav(helloLink)
 });
 portfolioLink.addEventListener('click', () => {
     removeActiveNav();
-    portfolioLink.classList.add('active');
+    activateNav(portfolioLink)
 });
 skillsLink.addEventListener('click', () => {
     removeActiveNav();
-    skillsLink.classList.add('active');
+    activateNav(skillsLink)
 });
 experienceLink.addEventListener('click', () => {
     removeActiveNav();
-    experienceLink.classList.add('active');
+    activateNav(experienceLink)
 });
 educationLink.addEventListener('click', () => {
     removeActiveNav();
-    educationLink.classList.add('active');
+    activateNav(educationLink)
 });
 contactLink.addEventListener('click', () => {
     removeActiveNav();
-    contactLink.classList.add('active');
+    activateNav(contactLink)
 });
 
 /*Auto activate nav links on scroll*/
-let helloSection = document.getElementById('1');
-let portfolioSection = document.getElementById('2');
-let skillsSection = document.getElementById('3');
-let experienceSection = document.getElementById('4');
-let educationSectoin = document.getElementById('5');
-let contactSection = document.getElementById('6');
-
-window.onscroll = (e) => {
-
-    if (e.scrollY > helloSection.offsetTop && e.scrollY < portfolioSection.offsetTop) {
-        removeActiveNav();
-        helloLink.classList.add('active');
-    }
-    if (e.scrollY > portfolioSection.offsetTop) {
-        removeActiveNav();
-        portfolioLink.classList.add('active');
-    }
-    if (e.scrollY == skillsSection.offsetTop) {
-        removeActiveNav();
-        skillsLink.classList.add('active');
-    }
-    if (e.scrollY == experienceSection.offsetTop) {
-        removeActiveNav();
-        experienceLink.classList.add('active');
-    }
-    if (e.scrollY == educationSectoin.offsetTop) {
-        removeActiveNav();
-        educationLink.classList.add('active');
-    }
-    if (e.scrollY == contactSection.offsetTop) {
-        removeActiveNav();
-        contactLink.classList.add('active');
-    }
-
-}
 
 /* Show only specific Portfolio event listeners */
 allLink.addEventListener('click', () => {
@@ -153,6 +116,11 @@ sqlLink.addEventListener('click', () => {
 });
 
 /* FUNCTIONS */
+
+/* Activate navigation link */
+function activateNav(section) {
+    section.classList.add('active');
+}
 
 /* Remove active navigation */
 function removeActiveNav() {
