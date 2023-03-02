@@ -84,6 +84,43 @@ contactLink.addEventListener('click', () => {
     contactLink.classList.add('active');
 });
 
+/*Auto activate nav links on scroll*/
+let helloSection = document.getElementById('1');
+let portfolioSection = document.getElementById('2');
+let skillsSection = document.getElementById('3');
+let experienceSection = document.getElementById('4');
+let educationSectoin = document.getElementById('5');
+let contactSection = document.getElementById('6');
+
+window.onscroll = (e) => {
+
+    if (e.scrollY > helloSection.offsetTop && e.scrollY < portfolioSection.offsetTop) {
+        removeActiveNav();
+        helloLink.classList.add('active');
+    }
+    if (e.scrollY > portfolioSection.offsetTop) {
+        removeActiveNav();
+        portfolioLink.classList.add('active');
+    }
+    if (e.scrollY == skillsSection.offsetTop) {
+        removeActiveNav();
+        skillsLink.classList.add('active');
+    }
+    if (e.scrollY == experienceSection.offsetTop) {
+        removeActiveNav();
+        experienceLink.classList.add('active');
+    }
+    if (e.scrollY == educationSectoin.offsetTop) {
+        removeActiveNav();
+        educationLink.classList.add('active');
+    }
+    if (e.scrollY == contactSection.offsetTop) {
+        removeActiveNav();
+        contactLink.classList.add('active');
+    }
+
+}
+
 /* Show only specific Portfolio event listeners */
 allLink.addEventListener('click', () => {
     removeActivePortfolio();
