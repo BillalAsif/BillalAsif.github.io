@@ -5,11 +5,10 @@ var htmlcssLink = document.querySelector("#htmlcss");
 var sqlLink = document.querySelector("#sql");
 
 /* Portfolio Columns */
-var sosPortfolio = document.getElementById('bjjCol');
-var jsgamePortfolio = document.getElementById('randomquotesCol');
-var booklistPortfolio = document.getElementById('booklistCol');
-var sunnahmarketPortfolio = document.getElementById('sunnahmarketCol');
-var dbPortfolio = document.getElementById('sqlCol');
+var bjjPortfolio = document.getElementById('bjjCol');
+var jsgamePortfolio = document.getElementById('jsgameCol');
+var jstodoPortfolio = document.getElementById('jstodoappCol');
+var sqlPortfolio = document.getElementById('sqlCol');
 
 /* Navigation variable */
 var helloLink = document.querySelector("#hello");
@@ -97,8 +96,8 @@ javascriptLink.addEventListener('click', () => {
     removeActivePortfolio();
     javascriptLink.classList.add('active');
     hideAll();
-    gloryPortfolio.classList.remove('hide');
-    randomquotesPortfolio.classList.remove('hide');
+    jsgamePortfolio.classList.remove('hide');
+    jstodoPortfolio.classList.remove('hide');
 
 });
 
@@ -106,22 +105,14 @@ htmlcssLink.addEventListener('click', () => {
     removeActivePortfolio();
     htmlcssLink.classList.add('active');
     hideAll();
-    booklistPortfolio.classList.remove('hide');
-    booklistPortfolio.classList.remove('hide');
-});
-
-phpLink.addEventListener('click', () => {
-    removeActivePortfolio();
-    phpLink.classList.add('active');
-    hideAll();
-    sunnahmarketPortfolio.classList.remove('hide');
+    bjjPortfolio.classList.remove('hide');
 });
 
 sqlLink.addEventListener('click', () => {
     removeActivePortfolio();
     sqlLink.classList.add('active');
     hideAll();
-    dbPortfolio.classList.remove('hide');
+    sqlPortfolio.classList.remove('hide');
 });
 
 /* FUNCTIONS */
@@ -144,7 +135,6 @@ function removeActivePortfolio() {
     allLink.classList.remove('active');
     javascriptLink.classList.remove('active');
     htmlcssLink.classList.remove('active');
-    phpLink.classList.remove('active');
     sqlLink.classList.remove('active');
 
 }
@@ -152,22 +142,18 @@ function removeActivePortfolio() {
 /* Hide all portfolio items */
 function hideAll() {
 
-    gloryPortfolio.classList.add('hide');
-    randomquotesPortfolio.classList.add('hide');
-    booklistPortfolio.classList.add('hide');
-    sunnahmarketPortfolio.classList.add('hide');
-    dbPortfolio.classList.add('hide');
+    bjjPortfolio.classList.add('hide');
+    jsgamePortfolio.classList.add('hide');
+    jstodoPortfolio.classList.add('hide');
+    sqlPortfolio.classList.add('hide');
 
 }
 
 /* Show all portfolio items */
 function showAll() {
 
-    snappyrepairsPortfolio.classList.remove('hide');
-    gloryPortfolio.classList.remove('hide');
-    randomquotesPortfolio.classList.remove('hide');
-    booklistPortfolio.classList.remove('hide');
-    sunnahmarketPortfolio.classList.remove('hide');
-    dbPortfolio.classList.remove('hide');
-
+    bjjPortfolio.classList.remove('hide');
+    jsgamePortfolio.classList.remove('hide');
+    jstodoPortfolio.classList.remove('hide');
+    sqlPortfolio.classList.remove('hide');
 }
