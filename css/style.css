@@ -1,9 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+
+/* General */
 body {
   font-family: "Roboto", sans-serif;
   color: #F1F5F7;
 }
+
+.primaryBG {
+  background-color: #F1F5F7;
+  color: #1D9BC6;
+}
+
+.secondaryBG {
+  background-color: #1E2740;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.turquoise {
+  background-color: #82A4AB;
+}
+
+a {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+/* NavBar */
 
 #navbarNav {
   position: fixed;
@@ -21,11 +52,13 @@ body {
   padding: 20px 20px;
   display: block;
 }
+
 .far,
 .fas {
   margin-right: 3px;
   font-size: 15px;
 }
+
 .active {
   background-color: #1D9BC6 !important;
   color: #F1F5F7 !important;
@@ -35,18 +68,17 @@ body {
   text-decoration: unset !important;
 }
 
+/* main */
 .photo1 {
   width: 300px;
 }
+
 .center {
   text-align: center;
 }
+
 .section {
   padding: 80px 0px;
-}
-
-.grey {
-  background-color: #1E2740;
 }
 
 .site-btn {
@@ -62,6 +94,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+/* Portfolio */
 
 .portfolio-item {
   width: 100%;
@@ -86,10 +120,6 @@ body {
   margin: 5px 0px;
 }
 
-.turquoise {
-  background-color: #82A4AB;
-}
-
 .portfolio-title {
   margin-top: 10px;
   font-weight: bold;
@@ -101,15 +131,7 @@ body {
   margin-top: -10px;
 }
 
-a {
-  font-weight: bold;
-  font-family: "Lato", sans-serif;
-  color: black;
-}
-
-.hide {
-  display: none;
-}
+/* footer */
 
 footer {
   background-color: black;
@@ -135,20 +157,30 @@ footer {
   display: none;
 }
 
+
+/* Media queries */
+
 @media (max-width: 991px) {
   #navbarNav {
     position: relative;
   }
+
   .portfolio-links {
     width: 100%;
     padding: 15px;
     margin: 10px 0px;
   }
+
   .photo1 {
     margin-top: 20px;
   }
+
   #navbarNav ul li a {
     margin-top: 5px;
+  }
+
+  .main-para {
+    text-align: center;
   }
 }
 
