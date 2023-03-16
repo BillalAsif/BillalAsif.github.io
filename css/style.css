@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+  color: #F1F5F7;
 }
 
 #navbarNav {
@@ -10,7 +11,7 @@ body {
 }
 
 .navbar {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #1D9BC6;
 }
 
 #navbarNav ul li a {
@@ -26,8 +27,8 @@ body {
   font-size: 15px;
 }
 .active {
-  background-color: black !important;
-  color: white !important;
+  background-color: #1D9BC6 !important;
+  color: #F1F5F7 !important;
   border-top-right-radius: 25px !important;
   border-top-left-radius: 25px !important;
   border-bottom-left-radius: 25px !important;
@@ -35,19 +36,21 @@ body {
 }
 
 .photo1 {
-  width: 100%;
+  width: 300px;
 }
-
+.center {
+  text-align: center;
+}
 .section {
   padding: 80px 0px;
 }
 
 .grey {
-  background-color: yellow;
+  background-color: #1E2740;
 }
 
 .site-btn {
-  color: black;
+  color: #F1F5F7;
   min-width: 170px;
   text-align: center;
   padding: 15px;
@@ -76,7 +79,7 @@ body {
 
 .submit {
   margin-top: 40px;
-  background-color: turquoise;
+  background-color: #82A4AB;
 }
 
 .m5 {
@@ -84,7 +87,7 @@ body {
 }
 
 .turquoise {
-  background-color: turquoise;
+  background-color: #82A4AB;
 }
 
 .portfolio-title {
