@@ -1,6 +1,78 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
 
+
+/* keyframes */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes appear {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes border {
+
+  0% {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  25% {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  50% {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  100% {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+}
+
+
 /* General */
 body {
   font-family: "Roboto", sans-serif;
@@ -20,10 +92,6 @@ body {
   align-items: center;
 }
 
-.turquoise {
-  background-color: #82A4AB;
-}
-
 a {
   font-weight: bold;
   font-family: "Lato", sans-serif;
@@ -31,7 +99,36 @@ a {
 }
 
 .hide {
+  animation: disappear 1s ease-out;
   display: none;
+}
+
+.site-btn {
+  color: #F1F5F7;
+  min-width: 170px;
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1.66;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #1D9BC6;
+  color: #F1F5F7;
+  text-decoration: unset !important;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.site-btn:hover {
+  color: #F1F5F7;
+  animation: border 1s linear;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /* NavBar */
@@ -69,8 +166,16 @@ a {
 }
 
 /* main */
+
+.intro-header {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(20) forwards infinite;
+}
+
 .photo1 {
   width: 300px;
+  animation: appear 2s ease-in;
 }
 
 .center {
@@ -81,19 +186,6 @@ a {
   padding: 80px 0px;
 }
 
-.site-btn {
-  color: #F1F5F7;
-  min-width: 170px;
-  text-align: center;
-  padding: 15px;
-  display: inline-block;
-  border: none;
-  border-radius: 2px;
-  font-size: 12px;
-  line-height: 1.66;
-  text-transform: uppercase;
-  font-weight: 700;
-}
 
 /* Portfolio */
 
@@ -103,13 +195,14 @@ a {
 }
 
 .portfolio-links {
-  background-color: white;
+  background-color: #F1F5F7;
   border: none;
   text-transform: uppercase;
   text-decoration-line: underline;
-  font-size: 13px;
+  font-size: 20px;
   font-family: "Lato", sans-serif;
 }
+
 
 .submit {
   margin-top: 40px;
@@ -121,6 +214,7 @@ a {
 }
 
 .portfolio-title {
+  font-size: 20px;
   margin-top: 10px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
@@ -129,6 +223,7 @@ a {
 .portfolio-p {
   font-family: "Lato", sans-serif;
   margin-top: -10px;
+  color: black;
 }
 
 /* footer */
@@ -152,11 +247,6 @@ footer {
 #contact-form .form-control {
   margin: 10px 0px;
 }
-
-#downloadcv {
-  display: none;
-}
-
 
 /* Media queries */
 

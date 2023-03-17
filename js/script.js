@@ -49,11 +49,11 @@ document.getElementById('contact').addEventListener('click', function (e) {
     document.getElementById('6').scrollIntoView();
 });
 
-document.getElementById('contactme').addEventListener('click', function (e) {
+document.getElementById('portfolio-btn').addEventListener('click', function (e) {
     e.preventDefault();
-    document.getElementById('6').scrollIntoView();
+    document.getElementById('2').scrollIntoView();
     removeActiveNav();
-    contactLink.classList.add('active');
+    activateNav(portfolioLink)
 });
 
 /* Navigation active event listeners */
