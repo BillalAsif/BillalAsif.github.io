@@ -9,6 +9,7 @@ var bjjPortfolio = document.getElementById('bjjCol');
 var jsgamePortfolio = document.getElementById('jsgameCol');
 var jstodoPortfolio = document.getElementById('jstodoappCol');
 var sqlPortfolio = document.getElementById('sqlCol');
+var hobsgasPortfolio = document.getElementById('hobsgasCol');
 
 /* Navigation variable */
 var helloLink = document.querySelector("#hello");
@@ -106,6 +107,7 @@ htmlcssLink.addEventListener('click', () => {
     htmlcssLink.classList.add('active');
     hideAll();
     bjjPortfolio.classList.remove('hide');
+    hobsgasPortfolio.classList.remove('hide');
 });
 
 sqlLink.addEventListener('click', () => {
@@ -114,6 +116,7 @@ sqlLink.addEventListener('click', () => {
     hideAll();
     sqlPortfolio.classList.remove('hide');
 });
+
 
 /* FUNCTIONS */
 
@@ -151,6 +154,7 @@ function hideAll() {
     jsgamePortfolio.classList.add('hide');
     jstodoPortfolio.classList.add('hide');
     sqlPortfolio.classList.add('hide');
+    hobsgasPortfolio.classList.add('hide');
 
 }
 
@@ -161,4 +165,6 @@ function showAll() {
     jsgamePortfolio.classList.remove('hide');
     jstodoPortfolio.classList.remove('hide');
     sqlPortfolio.classList.remove('hide');
+    hobsgasPortfolio.classList.remove('hide');
+
 }
