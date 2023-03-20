@@ -226,6 +226,10 @@ a {
   color: black;
 }
 
+#staticBackdrop > div > div {
+  width: 100%;
+}
+
 /* footer */
 
 footer {

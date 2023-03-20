@@ -168,3 +168,12 @@ function showAll() {
     hobsgasPortfolio.classList.remove('hide');
 
 }
+
+// Modal
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})
