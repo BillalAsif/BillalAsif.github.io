@@ -10,6 +10,7 @@ var jsgamePortfolio = document.getElementById('jsgameCol');
 var jstodoPortfolio = document.getElementById('jstodoappCol');
 var sqlPortfolio = document.getElementById('sqlCol');
 var hobsgasPortfolio = document.getElementById('hobsgasCol');
+var timerPortfolio = document.getElementById('timerCol');
 
 /* Navigation variable */
 var helloLink = document.querySelector("#hello");
@@ -99,7 +100,7 @@ javascriptLink.addEventListener('click', () => {
     hideAll();
     jsgamePortfolio.classList.remove('hide');
     jstodoPortfolio.classList.remove('hide');
-
+    timerPortfolio.classList.remove('hide');
 });
 
 htmlcssLink.addEventListener('click', () => {
@@ -155,6 +156,7 @@ function hideAll() {
     jstodoPortfolio.classList.add('hide');
     sqlPortfolio.classList.add('hide');
     hobsgasPortfolio.classList.add('hide');
+    timerPortfolio.classList.add('hide');
 
 }
 
@@ -166,6 +168,7 @@ function showAll() {
     jstodoPortfolio.classList.remove('hide');
     sqlPortfolio.classList.remove('hide');
     hobsgasPortfolio.classList.remove('hide');
+    timerPortfolio.classList.remove('hide');
 
 }
 
